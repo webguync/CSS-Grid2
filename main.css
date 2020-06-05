@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 10px;
+  
+}
+
+h2.main{
+  color:#ffffff;
+  font-weight:bold;
+  text-shadow:1px 1px 1px rgba(0,0,0,1);
+  text-transform:uppercase;
+  letter-spacing:.25em;
+}
+
+h2.secondary {
+ color:#f2f2f2;
+ font-size:3em;
+}
+
+p {
+  font-size: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+ 
+}
+
+.container > div {
+  cursor: pointer;
+  height: 210px;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.5s ease-in;
+}
+
+.container > div:hover {
+  opacity: 0.7;
+  transform: scale(0.98);
+  background-color:#224f63;
+}
+
+.container > div:nth-of-type(1) {
+  grid-column: 1 / 5;
+  color:#224f63;
+ 
+}
+
+.container > div:nth-of-type(6) {
+  grid-column: 1 / 5;
+  color:#ffffff;
+}
+
+.container > div:nth-of-type(12) {
+  grid-column: 5 / 5;
+  color:#ffffff;
+}
+
+.container > div:nth-of-type(15) {
+  grid-column: 5 / 5;
+  color:#ffffff;
+}
+
+.bg {
+  background: url('images/earth-space-cosmos-5439.jpg');
+}
+
+
